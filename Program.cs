@@ -47,7 +47,7 @@ namespace Collection_Framework
             //Peek
 
 
-            Queue<int> queue = new Queue<int>();
+            /*Queue<int> queue = new Queue<int>();
             queue.Enqueue(1);
             queue.Enqueue(2);
             queue.Dequeue();
@@ -62,8 +62,27 @@ namespace Collection_Framework
             queue1.Push(4);
             queue1.Push(5);
             Console.WriteLine(queue1.Count);
-            Console.WriteLine(queue1.Peek());
+            Console.WriteLine(queue1.Peek());*/
+
+            //LINKED LIST
+            var names = new LinkedList<string>();
+            names.AddLast("Sonoo");
+            names.AddLast("Ankit");
+            names.AddLast("Peter");
+            names.AddLast("Irfan");
+
+            //insert new element before "Peter"  
+            LinkedListNode<String> node = names.Find("Peter");
+            names.AddBefore(node, "John");
+            names.AddAfter(node, "Lucy");
+
+            // Iterate list element using foreach loop  
+            foreach (var name in names)
+            {
+                Console.WriteLine(name);
+            }
 
         }
     }
+
 }
