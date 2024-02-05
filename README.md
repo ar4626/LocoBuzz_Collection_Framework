@@ -35,3 +35,23 @@ Inbuilt function are:
 + .IndexOf(<value>)
 
 # Queue
+Queue<T> class is used to Enqueue and Dequeue elements. It uses the concept of Queue that arranges elements in FIFO (First In First Out) order. It can have duplicate elements.
+Inbuilt function are:
++ .Enqueue(1);
++ .Dequeue();
++ .Peek();
++ .Count();
++ .Clear();
++ .Contains(2);
++ .ToArray();
+
+# Stack
+Stack<T> class is used to push and pop elements. It uses the concept of Stack that arranges elements in LIFO (Last In First Out) order. It can have duplicate elements.
+Inbuilt function are:
++ .Push(1);
++ .Pop();
++ .Peek();
++ .Count;
++ .Clear();
++ .Contains(2);
++ .ToArray();
