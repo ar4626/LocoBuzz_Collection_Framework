@@ -74,3 +74,18 @@ Inbuilt function are:
 + .RemoveAt(index)
 + .Clear() // clear the entire hashset
 + .IndexOf(<value>)
+
+# LinkedList
+C# LinkedList<T> class uses the concept of linked list. It allows us to insert and delete elements fastly. It can have duplicate elements.
++ .AddLast() 
++ .AddFirst()
++ .LinkedListNode<String> node=names.Find("Peter")//
++ .AddBefore(node, "John");
++ .AddAfter(node, "Lucy");  
+
+# Dictionary<TKey, TValue>
+C# Dictionary<TKey, TValue> class uses the concept of hashtable. It stores values on the basis of key. It contains unique keys only. By the help of key, we can easily search or remove elements.
++ .Add(<key>,<value>)
++ .Count // get the key-value pairs contains in dictionary
++ .dictionary_name.TryGetValue("value", out in value)
++ .<datatyppe of key> key = myDictionary.FirstOrDefault(x => x.Value == 2).Key; // Finding the key for a specific value (e.g., value = 2)
