@@ -65,7 +65,7 @@ namespace Collection_Framework
             Console.WriteLine(queue1.Peek());*/
 
             //LINKED LIST
-            var names = new LinkedList<string>();
+            /*var names = new LinkedList<string>();
             names.AddLast("Sonoo");
             names.AddLast("Ankit");
             names.AddLast("Peter");
@@ -80,7 +80,42 @@ namespace Collection_Framework
             foreach (var name in names)
             {
                 Console.WriteLine(name);
+            }*/
+
+
+            //Dictionary
+            Dictionary<string, string> names = new Dictionary<string, string>();
+            names.Add("1", "Sonoo");
+            names.Add("2", "Peter");
+            names.Add("3", "James");
+            names.Add("4", "Ratan");
+            names.Add("5", "Irfan");
+
+            foreach (KeyValuePair<string, string> kv in names)
+            {
+                Console.WriteLine(kv.Key + " " + kv.Value);
             }
+
+            int count = names.Count;
+            Console.WriteLine("Number of elements in the dictionary: " + count);
+
+            bool containsKey = names.ContainsKey("2");
+            Console.WriteLine("Does the dictionary contain key '2'? " + containsKey);
+
+            bool containsValue = names.ContainsValue("Ratan");
+            Console.WriteLine("Does the dictionary contain value 'Ratan'? " + containsValue);
+
+            names.Remove("3");
+            Console.WriteLine("Element with key '3' removed.");
+
+            Console.WriteLine("Keys in the dictionary:");
+            foreach (var key in names.Keys)
+            {
+                Console.WriteLine(key);
+            }
+
+
+
 
         }
     }
