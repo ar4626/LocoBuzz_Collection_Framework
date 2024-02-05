@@ -1,10 +1,10 @@
 # LocoBuzz_Collection_Framework
 Collection in C# represent a group of objects. By help of collection we perform various operations on objects like:
-->Store
-->Update
-->Delete
-->Retrive
-->Search
++ Store
++ Update
++ Delete
++ Retrive
++ Search
 
 # Types of Collections:
 There are three different ways to work with Collections.
