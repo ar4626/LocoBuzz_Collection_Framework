@@ -26,3 +26,12 @@ There are three different ways to work with Collections.
 --System.Collections.Concurrent classes
 
 # List 
+List<T> class is used to store and fetch elements. It can have duplicate elements.
+Inbuilt function are:
++ .Add(3)
++ .Remove()
++ .AddRange()
++ .RemoveAt(0) //to remove at particular location
++ .IndexOf(<value>)
+
+# Queue
